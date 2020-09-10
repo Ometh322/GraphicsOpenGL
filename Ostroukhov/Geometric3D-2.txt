@@ -1,0 +1,253 @@
+camera 10 5 5 10 5 0 0 1 0
+screen 90 2 0.3 200
+
+color 0 0 0
+thickness 2
+
+model 0.5 0.433 0.4082 1 0.866 0.8165
+ambient 0.24725	0.1995	0.0745
+diffuse 0.75164	0.60648	0.22648
+specular 0.628281 0.555802 0.366065
+shininess 51.2
+
+mesh 3 1
+0 0 0 0 -1 0
+2 0 0 0 -1 0
+1 0 -2 0 -1 0
+0 1 2
+mesh 3 1
+0 0 0 0 1 -1
+1 2 -1 0 1 -1
+2 0 0 0 1 -1
+0 1 2
+mesh 3 1
+0 0 0 -1 1 1
+1 0 -2 -1 1 1
+1 2 -1 -1 1 1
+0 1 2
+mesh 3 1
+1 2 -1 0 0 1
+2 0 0 0 0 1
+1 0 -2 0 0 1
+0 1 2
+scale 1.5	#Масштаб центральной улитки
+pushTransform # сохранить отправную точку
+rotate -90 1 1 0
+rotate -90 0 0 1
+translate 3 5 0
+figure
+popTransform
+scale 0.5	#Масштаб остальных улиток
+pushTransform
+
+rotate -90 1 1 0
+translate 4 0 0
+rotate -90 0 0 1
+translate 4 5 0
+figure
+popTransform
+pushTransform
+
+rotate -30 1 1 0
+translate 4 0 0
+rotate -30 0 0 1
+translate 4 5 0
+figure
+popTransform
+pushTransform
+
+rotate 30 1 1 0
+translate 4 0 0
+rotate 30 0 0 1
+translate 4 5 0
+figure
+popTransform
+pushTransform
+
+rotate 90 1 1 0
+translate 4 0 0
+rotate 90 0 0 1
+translate 4 5 0
+figure
+popTransform
+pushTransform
+
+rotate -120 1 1 0
+translate 4 0 0
+rotate -120 0 0 1
+translate 17 5 0
+figure
+popTransform
+pushTransform
+
+rotate -60 1 1 0
+translate 4 0 0
+rotate -60 0 0 1
+translate 17 5 0
+figure
+popTransform
+pushTransform
+
+rotate 180 1 1 0
+translate 4 0 0
+rotate 180 0 0 1
+translate 17 5 0
+figure
+popTransform
+pushTransform
+
+rotate 60 1 1 0
+translate 4 0 0
+rotate 60 0 0 1
+translate 17 5 0
+figure
+popTransform
+pushTransform
+
+rotate 120 1 1 0
+translate 4 0 0
+rotate 120 0 0 1
+translate 17 5 0
+figure
+popTransform
+
+#куб
+color 0 0 0
+thickness 2
+
+model 0.5 0.5 0.5 1 1 1 
+# нижняя грань красная
+color 255 0 0
+mesh 4 2
+-0.5 -0.5 -0.5 0.0 -1.0 0.0 # нормаль направлена вниз
+-0.5 -0.5 0.5 0.0 -1.0 0.0
+0.5 -0.5 0.5 0.0 -1.0 0.0
+0.5 -0.5 -0.5 0.0 -1.0 0.0
+0 1 2 # первый треугольник нижней грани
+0 2 3 # второй треугольник нижней грани
+# верхняя грань синяя
+color 0 0 255
+mesh 4 2
+-0.5 0.5 -0.5 0.0 1.0 0.0 # нормаль направлена вверх
+-0.5 0.5 0.5 0.0 1.0 0.0
+0.5 0.5 0.5 0.0 1.0 0.0
+0.5 0.5 -0.5 0.0 1.0 0.0
+0 1 3 # первый треугольник верхней грани
+1 2 3 # второй треугольник верхней грани
+# левая грань зеленая
+color 0 255 0
+mesh 4 2
+-0.5 -0.5 -0.5 -1.0 0.0 0.0 # нормаль направлена влево
+-0.5 -0.5 0.5 -1.0 0.0 0.0
+-0.5 0.5 -0.5 -1.0 0.0 0.0
+-0.5 0.5 0.5 -1.0 0.0 0.0
+0 1 2 # первый треугольник левой грани
+1 2 3 # второй треугольник левой грани
+# правая грань желтая
+color 255 255 0
+mesh 4 2
+0.5 -0.5 0.5 1.0 0.0 0.0 # нормаль направлена вправо
+0.5 -0.5 -0.5 1.0 0.0 0.0
+0.5 0.5 0.5 1.0 0.0 0.0
+0.5 0.5 -0.5 1.0 0.0 0.0
+2 0 1 # первый треугольник правой грани
+2 1 3 # второй треугольник правой грани
+# передняя грань фиолетовая
+color 255 0 255
+mesh 4 2
+-0.5 -0.5 0.5 0.0 0.0 1.0 # нормаль направлена на нас
+0.5 -0.5 0.5 0.0 0.0 1.0
+-0.5 0.5 0.5 0.0 0.0 1.0
+0.5 0.5 0.5 0.0 0.0 1.0
+0 2 3 # первый треугольник передней грани
+0 3 1 # второй треугольник передней грани
+# задняя грань морской волны
+color 0 255 255
+mesh 4 2
+-0.5 -0.5 -0.5 0.0 0.0 -1.0 # нормаль направлена от нас
+0.5 -0.5 -0.5 0.0 0.0 -1.0
+-0.5 0.5 -0.5 0.0 0.0 -1.0
+0.5 0.5 -0.5 0.0 0.0 -1.0
+1 3 2 # первый треугольник задней грани
+1 2 0 # второй треугольник задней грани
+
+scale 1.5
+pushTransform
+rotate 90 1 1 0
+rotate 90 0 0 1
+translate 17 5 0
+figure
+popTransform
+scale 0.5
+pushTransform
+
+rotate -120 1 1 0
+translate 4 0 0
+rotate -120 0 0 1
+translate 4 5 0
+figure
+popTransform
+pushTransform
+
+rotate -60 1 1 0
+translate 4 0 0
+rotate -60 0 0 1
+translate 4 5 0
+figure
+popTransform
+pushTransform
+
+translate 4 0 0
+#rotate 0 0 0 1
+translate 4 5 0
+figure
+popTransform
+pushTransform
+
+rotate 60 1 1 0
+translate 4 0 0
+rotate 60 0 0 1
+translate 4 5 0
+figure
+popTransform
+pushTransform
+
+rotate 120 1 1 0
+translate 4 0 0
+rotate 120 0 0 1
+translate 4 5 0
+figure
+popTransform
+pushTransform
+
+rotate 90 1 1 0
+translate 4 0 0
+rotate 90 0 0 1
+translate 17 5 0
+figure
+popTransform
+pushTransform
+
+rotate 150 1 1 0
+translate 4 0 0
+rotate 150 0 0 1
+translate 17 5 0
+figure
+popTransform
+pushTransform
+
+rotate -150 1 1 0
+translate 4 0 0
+rotate -150 0 0 1
+translate 17 5 0
+figure
+popTransform
+pushTransform
+
+rotate -90 1 1 0
+translate 4 0 0
+rotate -90 0 0 1
+translate 17 5 0
+figure
+popTransform
+pushTransform

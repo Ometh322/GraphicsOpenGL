@@ -1,0 +1,21 @@
+﻿  glad.c
+  Main.cpp
+c:\users\danch\source\repos\task_8_ostroukhov1\ostroukhov\main.cpp(286): warning C4244: +=: преобразование "double" в "float", возможна потеря данных
+c:\users\danch\source\repos\task_8_ostroukhov1\ostroukhov\main.cpp(412): warning C4305: аргумент: усечение из "double" в "float"
+c:\users\danch\source\repos\task_8_ostroukhov1\ostroukhov\main.cpp(431): warning C4305: аргумент: усечение из "double" в "float"
+c:\users\danch\source\repos\task_8_ostroukhov1\ostroukhov\main.cpp(449): warning C4305: аргумент: усечение из "double" в "float"
+c:\users\danch\source\repos\task_8_ostroukhov1\ostroukhov\main.cpp(467): warning C4305: аргумент: усечение из "double" в "float"
+c:\users\danch\source\repos\task_8_ostroukhov1\ostroukhov\main.cpp(518): warning C4305: -=: усечение из "double" в "float"
+c:\users\danch\source\repos\task_8_ostroukhov1\ostroukhov\main.cpp(523): warning C4305: +=: усечение из "double" в "float"
+c:\users\danch\source\repos\task_8_ostroukhov1\ostroukhov\main.cpp(532): warning C4305: -=: усечение из "double" в "float"
+c:\users\danch\source\repos\task_8_ostroukhov1\ostroukhov\main.cpp(535): warning C4305: +=: усечение из "double" в "float"
+c:\users\danch\source\repos\task_8_ostroukhov1\ostroukhov\main.cpp(543): warning C4305: -=: усечение из "double" в "float"
+c:\users\danch\source\repos\task_8_ostroukhov1\ostroukhov\main.cpp(547): warning C4305: +=: усечение из "double" в "float"
+c:\users\danch\source\repos\task_8_ostroukhov1\ostroukhov\main.cpp(556): warning C4305: -=: усечение из "double" в "float"
+c:\users\danch\source\repos\task_8_ostroukhov1\ostroukhov\main.cpp(560): warning C4305: +=: усечение из "double" в "float"
+c:\users\danch\source\repos\task_8_ostroukhov1\ostroukhov\main.cpp(569): warning C4305: -=: усечение из "double" в "float"
+c:\users\danch\source\repos\task_8_ostroukhov1\ostroukhov\main.cpp(574): warning C4305: +=: усечение из "double" в "float"
+c:\users\danch\source\repos\task_8_ostroukhov1\ostroukhov\main.cpp(812): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\danch\source\repos\task_8_ostroukhov1\ostroukhov\main.cpp(820): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\danch\source\repos\task_8_ostroukhov1\ostroukhov\shader.h(26): warning C4715: shader::readTextFile: значение возвращается не при всех путях выполнения
+  Ostroukhov.vcxproj -> C:\Users\danch\source\repos\task_8_Ostroukhov1\Debug\Ostroukhov.exe
